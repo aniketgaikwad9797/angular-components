@@ -14,11 +14,11 @@ export class AddServerBlueprintComponent implements OnInit {
   }
 
   onAddServer(serverType: string) {
-    this.serverList.push({
-      name: this.serverName,
-      description: this.serverDesc,
-      type: serverType,
-    });
+    // this.serverList.push({
+    //   name: this.serverName,
+    //   description: this.serverDesc,
+    //   type: serverType,
+    // });
   }
 
 }
