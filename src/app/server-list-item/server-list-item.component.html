@@ -1,12 +1,12 @@
 <li class="list-group-item">
-    <h4 class="list-group-item-header">{{server.name}}</h4>
+    <h4 class="list-group-item-header">{{serverItem.name}}</h4>
     <p
       class="list-group-item-text"
       [ngClass]="{
-        server: server.type === 'server',
-        blueprint: server.type === 'blueprint'
+        serverItem: serverItem.type === 'serverItem',
+        blueprint: serverItem.type === 'blueprint'
       }"
     >
-      {{server.description}}
+      {{serverItem.description}}
     </p>
   </li>

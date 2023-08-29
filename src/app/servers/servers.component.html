@@ -4,5 +4,6 @@
 <ul class="list-group">
   <app-server-list-item
     *ngFor="let server of serverList"
+    [serverItem]="server"
   ></app-server-list-item>
 </ul>
