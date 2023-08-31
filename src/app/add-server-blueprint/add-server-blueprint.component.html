@@ -6,10 +6,10 @@
 </div>
 <div class="row">
   <div class="col-md-6 col-xs-6 form-group">
-    <label for="serverName">Server Description</label>
+    <label for="serverDescription">Server Description</label>
     <input
       type="text"
-      id="serverName"
+      id="serverDescription"
       class="form-control"
       #serverDescriptionInput
     />
@@ -18,18 +18,10 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <button
-        class="btn-primary"
-        (click)="onAddServer('server', serverNameInput, serverDescriptionInput)"
-      >
+      <button class="btn-primary" (click)="onAddServer('server')">
         Add Server
       </button>
-      <button
-        class="btn-primary"
-        (click)="
-          onAddServer('blueprint', serverNameInput, serverDescriptionInput)
-        "
-      >
+      <button class="btn-primary" (click)="onAddServer('blueprint')">
         Add Blueprint
       </button>
     </div>
